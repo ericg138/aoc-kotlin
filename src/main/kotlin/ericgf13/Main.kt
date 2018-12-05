@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
     val days = mutableListOf<Day>().apply {
         add(Day01())
         add(Day02())
+        add(Day03())
         add(Day05())
     }
 
