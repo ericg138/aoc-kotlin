@@ -1,9 +1,8 @@
-package ericgf13.days
+package ericgf13.adventofcode.days
 
-import ericgf13.Day
+import ericgf13.adventofcode.Day
 
-class Day03 : Day() {
-    override val day = 3
+class Day03 : Day(3) {
     private val pattern = """#(\d+) @ (\d+),(\d+): (\d+)x(\d+)""".toRegex()
     private val input = getInputAsList().map {
         val matchResult = pattern.matchEntire(it)

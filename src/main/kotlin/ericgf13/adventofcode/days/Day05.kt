@@ -1,10 +1,9 @@
-package ericgf13.days
+package ericgf13.adventofcode.days
 
-import ericgf13.Day
+import ericgf13.adventofcode.Day
 import java.util.*
 
-class Day05 : Day() {
-    override val day = 5
+class Day05 : Day(5) {
     private val input = getInputAsString()
 
     override fun part1(): String {

@@ -1,6 +1,6 @@
-package ericgf13
+package ericgf13.adventofcode
 
-import ericgf13.days.*
+import ericgf13.adventofcode.days.*
 import kotlin.system.measureTimeMillis
 
 fun main(args: Array<String>) {
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 
     days.forEach {
         val sb = StringBuilder()
-        sb.appendln("===== DAY ${it.day} =====")
+        sb.appendln("===== DAY ${it.dayNum} =====")
         sb.appendln(" - " + measureTimeMillis { sb.append("Part 1: ${it.part1()}") } + " ms")
         sb.appendln(" - " + measureTimeMillis { sb.append("Part 2: ${it.part2()}") } + " ms")
         print(sb)

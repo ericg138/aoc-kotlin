@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ericgf13</groupId>
+    <groupId>ericgf13.adventofcode</groupId>
     <artifactId>adventofcode-2018</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>

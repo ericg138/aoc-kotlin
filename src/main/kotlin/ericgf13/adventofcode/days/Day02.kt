@@ -1,9 +1,8 @@
-package ericgf13.days
+package ericgf13.adventofcode.days
 
-import ericgf13.Day
+import ericgf13.adventofcode.Day
 
-class Day02 : Day() {
-    override val day = 2
+class Day02 : Day(2) {
     private val input = getInputAsList()
 
     override fun part1(): String {
