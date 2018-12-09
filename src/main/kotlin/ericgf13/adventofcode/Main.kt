@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
         add(Day01())
         add(Day02())
         add(Day03())
+        add(Day04())
         add(Day05())
         add(Day08())
         add(Day09())
