@@ -6,7 +6,7 @@ class Day04 : Day(4) {
 
     private val guards = HashMap<Int, MutableList<Int>>()
 
-    init {
+    override fun part1(): String {
         val pattern = """\[\d{4}-\d{2}-\d{2} (\d{2}):(\d{2})] (.+)""".toRegex()
         var currentGuard = 0
         var asleepMinute = 0
@@ -33,9 +33,7 @@ class Day04 : Day(4) {
                 }
             }
         }
-    }
 
-    override fun part1(): String {
         val guard = guards.maxBy { it.value.size }
         val minute = guard!!.value.groupBy { it }.maxBy { it.value.size }!!.key
         return (guard.key * minute).toString()

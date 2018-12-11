@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
         add(Day08())
         add(Day09())
         add(Day10())
+        add(Day11())
     }
 
     days.forEach {
