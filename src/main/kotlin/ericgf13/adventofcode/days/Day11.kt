@@ -39,7 +39,7 @@ class Day11 : Day(11) {
 
                     for (i in 0 until size) {
                         for (j in 0 until size) {
-                            totalPower += powerByCoord["" + (x + i) + "," + (y + j)]!!
+                            totalPower += powerByCoord["${x + i},${y + j}"]!!
                         }
                     }
 
