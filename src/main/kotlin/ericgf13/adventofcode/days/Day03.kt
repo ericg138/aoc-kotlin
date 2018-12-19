@@ -19,8 +19,7 @@ class Day03 : Day(3) {
             for (i in it.x until it.x + it.width) {
                 for (j in it.y until it.y + it.height) {
                     val coord = "$i,$j"
-                    idsByCoord.putIfAbsent(coord, mutableSetOf())
-                    idsByCoord[coord]?.add(it.id)
+                    idsByCoord.getOrPut(coord) { mutableSetOf() }.add(it.id)
                 }
             }
         }

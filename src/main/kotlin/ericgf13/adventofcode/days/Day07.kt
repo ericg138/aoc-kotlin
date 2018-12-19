@@ -16,8 +16,7 @@ class Day07 : Day(7) {
             val letter1 = it[5]
             val letter2 = it[36]
             map.putIfAbsent(letter1, mutableListOf())
-            map.putIfAbsent(letter2, mutableListOf())
-            map[letter2]!!.add(letter1)
+            map.getOrPut(letter2) { mutableListOf() }.add(letter1)
         }
         return map
     }
