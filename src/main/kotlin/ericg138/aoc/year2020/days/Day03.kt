@@ -1,7 +1,7 @@
 package ericg138.aoc.year2020.days
 
 import ericg138.aoc.Day
-import ericg138.aoc.year2020.util.Coordinate
+import ericg138.aoc.util.Coordinate
 
 class Day03 : Day(3) {
     private val input = getInputAsList()

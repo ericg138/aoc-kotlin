@@ -1,4 +1,4 @@
-package ericg138.aoc.year2020.util
+package ericg138.aoc.util
 
 data class Coordinate(var x: Int, var y: Int) {
 
