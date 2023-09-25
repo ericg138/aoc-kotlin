@@ -25,7 +25,7 @@ class Day07 : Day(7) {
 
         var out = ""
         while (map.isNotEmpty()) {
-            val char = map.filter { it.value.size == 0 }.map { it.key }.sorted().first()
+            val char = map.filter { it.value.isEmpty() }.map { it.key }.minOf { it }
             out += char
             map.forEach { it.value.remove(char) }
             map.remove(char)
@@ -53,7 +53,7 @@ class Day07 : Day(7) {
                 }
             }
 
-            val availableLetters = map.filter { it.value.size == 0 }.map { it.key }.sorted()
+            val availableLetters = map.filter { it.value.isEmpty() }.map { it.key }.sorted()
             availableLetters.forEach { letter ->
                 if (workers.none { it.letter == letter }) {
                     val worker = workers.firstOrNull { it.available }

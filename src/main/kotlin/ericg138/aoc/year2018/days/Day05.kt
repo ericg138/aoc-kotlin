@@ -26,7 +26,7 @@ class Day05 : Day(5) {
         val deque = ArrayDeque<Char>()
 
         list.forEach {
-            if (deque.size == 0) {
+            if (deque.isEmpty()) {
                 deque.push(it)
             } else {
                 val inQueue = deque.peek()
